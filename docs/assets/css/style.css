@@ -1,0 +1,350 @@
+@font-face {
+	font-family: 'CENTAUR';
+	src: url('../fonts/CENTAUR.eot');
+	src: local('CENTAUR'), url('../fonts/CENTAUR.woff') format('woff'), url('../fonts/CENTAUR.ttf') format('truetype');
+}
+
+body {
+    font-family: 'CENTAUR';
+}
+.dropCaps { 
+	float: left;
+	left: -50px; 
+	font-size: 50px; 
+	line-height: 32px; 
+	padding-top: 4px; 
+	padding-right: 2px; 
+	padding-left: 3px;
+	/*margin-left: -10px;*/
+}
+.attribution {
+	padding-left: 25px;
+}
+.row {
+	overflow: auto;
+	/*background-color: yellow;*/
+	min-height: 5px;
+	display: table-row;
+}
+.leftColumn {
+	width: 35%;
+	/*background-color: blue;*/
+	display: table-cell;
+	padding-right: 40px;
+	text-align: right;
+}
+.rightColumn {
+	width: 45%;
+	/*background-color: red;*/
+	display: table-cell;
+	text-align: left;
+}
+
+/*Root Page*/
+
+#rootTitle {
+	font-size: 64pt;
+	text-align: center;
+	margin-top: 100px;
+}
+#rootTitleQ {
+	font-size: 108pt;
+}
+#rootBody {
+	margin: 0 auto;
+	font-variant: small-caps;
+	font-size: 24pt;
+	line-height: 26px;
+	text-align: justify;
+	margin-top: 100px;
+	width: 650px;
+}
+#rootEnter {
+	text-align: center;
+	margin-top: 100px;
+	font-size: 24pt;
+	font-variant: small-caps;
+}
+#rootEnterLink {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/*Susan Barron Page*/
+
+#sbTitle {
+	font-size: 48pt;
+	text-align: center;
+	margin-top: 100px;
+}
+#sbSubtitle {
+	font-size: 24pt;
+	text-align: center;
+	margin-top: 10px;
+}
+#sbBody {
+	margin: 0 auto;
+	font-variant: small-caps;
+	font-size: 18pt;
+	line-height: 26px;
+	text-align: justify;
+	margin-top: 60px;
+	width: 500px;
+}
+#sbEnter {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 24pt;
+	font-variant: small-caps;
+}
+#sbEnterLink {
+	color: #000000;
+	text-decoration: none;
+}
+#sbLogo {
+	font-size: 18pt;
+	text-align: center;
+	margin-top: 20px;
+}
+#sbLogoQ {
+	font-size: 32pt;
+}
+
+
+/*Pre-Home Page*/
+
+#preHome {
+	margin: 0 auto;
+	width: 526px;
+	margin-top: 135px;
+	font-size: 10pt;
+	text-align: right;
+	line-height: 16pt;
+}
+
+
+/*Home Page*/
+
+#homeOuter {
+	width: 920px;
+	height: 700px;
+	margin: 50px auto;
+	text-align: center;
+}
+#homeLeft, #homeRight{
+	width: 432px;
+	height: 100%;
+	text-align: justify;
+}
+#homeLeft, #homeRightBox{
+	float: left;
+}
+#homeRight, #homeLeftBox {
+	float: right;
+}
+#homeLeftBox, #homeRightBox{
+	shape-outside: content-box;
+	margin-top: 100px;
+	width: 110px;
+	height: 488px;
+	/*background: blue;*/
+}
+#homeLinks{
+	position: absolute;
+	width: 250px;
+	height: 488px;
+	margin-left: 338px;
+	margin-top: 100px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 14pt;
+	font-variant: small-caps;
+}
+.homeLinks {
+	color: #000000;
+	text-decoration: none;
+}
+.homeTopText{
+	font-size: 12pt;
+}
+#homeDropCapsR {
+	float: left;
+	left: -50px; 
+	font-size: 50px; 
+	line-height: 32px; 
+	padding-top: 4px; 
+	padding-right: 2px; 
+	padding-left: 3px;
+	margin-left: -113px;
+}
+
+
+/*Biography Page*/
+
+#bioTitle {
+	height: 30px;
+	width: 720px;
+	margin: 30px auto;
+	font-size: 18pt;
+	font-variant: small-caps;
+}
+#bioTitleLeft {
+	text-align: right;
+	float: left;
+	width: 330px;
+}
+#bioTitleRight {
+	margin: 0 auto;
+	text-align: left;
+	float: right;
+	width: 330px;
+}
+#bioOuter {
+	width: 720px;
+	height: 1150px;
+	margin: 20px auto;
+	text-align: center;
+}
+#bioLeft, #bioRight {
+	width: 332px;
+	height: 100%;
+	text-align: justify;
+}
+#bioLeft, #bioRightBox {
+	float: left;
+}
+#bioRight, #bioLeftBox {
+	float: right;
+}
+#bioLeftBox, #bioRightBox {
+	shape-outside: content-box;
+	margin-top: 350px;
+	width: 160px;
+	height: 440px;
+	/*background: blue;*/
+}
+#bioPic {
+	position: absolute;
+	width: 315px;
+	height: 413px;
+	margin-left: 205px;
+	margin-top: 355px;
+	text-align: center;
+	font-size: 14pt;
+	font-variant: small-caps;
+	background: green;
+}
+#bioLinks {
+	margin: 100px auto;
+	text-align: center;
+	font-size: 14pt;
+	font-variant: small-caps;
+}
+.bioLinks {
+	color: #000000;
+	text-decoration: none;
+}
+#bioDropCapsA {
+	float: left;
+	left: -50px; 
+	font-size: 50px; 
+	line-height: 32px; 
+	padding-top: 4px; 
+	padding-right: 2px; 
+	padding-left: 3px;
+	margin-left: -163px;
+}
+
+
+
+
+/*Critical Excerpts Page*/
+
+#critTitle {
+	height: 30px;
+	width: 720px;
+	margin: 30px auto;
+	font-size: 18pt;
+	font-variant: small-caps;
+}
+#critTitleLeft {
+	text-align: right;
+	float: left;
+	width: 330px;
+}
+#critTitleRight {
+	margin: 0 auto;
+	text-align: left;
+	float: right;
+	width: 330px;
+}
+#critOuter {
+	width: 720px;
+	height: 2550px;
+	margin: 20px auto;
+	text-align: center;
+}
+#critLeft, #critRight {
+	width: 332px;
+	height: 100%;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+#critLeft {
+	float: left;
+}
+#critRight {
+	float: right;
+}
+#critLinks {
+	margin: 100px auto;
+	text-align: center;
+	font-size: 14pt;
+	font-variant: small-caps;
+}
+.critLinks {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
+
+/*Collections Page*/
+
+#colTitle {
+	height: 30px;
+	width: 720px;
+	margin: 30px auto;
+	font-size: 18pt;
+	font-variant: small-caps;
+}
+#colTitleLeft {
+	text-align: right;
+	float: left;
+	width: 330px;
+}
+#colTitleRight {
+	margin: 0 auto;
+	text-align: left;
+	float: right;
+	width: 330px;
+}
+#colOuter {
+	width: 720px;
+	height: 500px;
+	margin: 20px auto;
+	text-align: center;
+	display: table;
+}
+#colLinks {
+	margin: 100px auto;
+	text-align: center;
+	font-size: 14pt;
+	font-variant: small-caps;
+}
+.colLinks {
+	color: #000000;
+	text-decoration: none;
+}
