@@ -32,6 +32,7 @@ body {
 	display: table-cell;
 	padding-right: 40px;
 	text-align: right;
+    vertical-align: top;
 }
 .rightColumn {
 	width: 45%;
@@ -347,4 +348,51 @@ body {
 .colLinks {
 	color: #000000;
 	text-decoration: none;
+}
+
+/*Exhibition Page*/
+
+.exItem {
+	/*background: yellow;*/
+	/*width: 100%;*/
+}
+
+.exDate {
+	display: inline-block;
+	width: 15%;
+	/*background: blue;*/
+    vertical-align: top;
+}
+
+.exName {
+	display: inline-block;
+	width: 85%;
+	/*background: green;*/
+}
+
+/*Contact*/
+#contactBody {
+	font-size: 16pt;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#contactBody a {
+	color: black;
+	text-decoration: none;
+}
+
+#contactTitle {
+	margin-top: 50px;
+	text-align: center
+}
+
+.reliquaireQ {
+	font-size: 24pt;
+}
+
+/*Publications*/
+
+#bookNote {
+	font-size: 9pt;
 }

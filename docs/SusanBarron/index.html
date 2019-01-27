@@ -20,7 +20,7 @@
 	<div id="sbBody">
 		Reliquaire is pleased to present the work of Susan Barron. This is the first time an extended selection of this artist's work has been made available on the internet. Most images are reproduced actual size, at a 1440x960 screen resolution.
 		<br><br>
-		All works copyright &copy; 1975-2017 by Susan Barron. Any unauthorized reproduction or duplication of images or texts is strictly prohibited. All rights reserved.
+		All works copyright &copy; 1975-<span id="currentYear">2019</span> by Susan Barron. Any unauthorized reproduction or duplication of images or texts is strictly prohibited. All rights reserved.
 	</div>
 
 	<div id="sbEnter">
@@ -31,3 +31,9 @@
 		RELI<span id="sbLogoQ">Q</span>UAIRE
 	</div>
 </body>
+
+<script>
+	var now = new Date();
+	var year = 1900 + now.getYear();
+	document.getElementById("currentYear").innerHTML = year;
+</script>
