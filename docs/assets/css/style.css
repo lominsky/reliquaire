@@ -159,8 +159,9 @@ body {
 	margin-top: 100px;
 	padding-top: 20px;
 	text-align: center;
-	font-size: 14pt;
-	font-variant: small-caps;
+	font-size: 12pt;
+	text-transform: uppercase;
+	/*font-variant: small-caps;*/
 }
 .homeLinks {
 	color: #000000;
