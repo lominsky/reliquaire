@@ -50,6 +50,8 @@ body {
 }
 #rootTitleQ {
 	font-size: 108pt;
+	font-style: italic;
+	padding-right: 15px;
 }
 #rootBody {
 	margin: 0 auto;
