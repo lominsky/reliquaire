@@ -4,6 +4,13 @@
 	src: local('CENTAUR'), url('../fonts/CENTAUR.woff') format('woff'), url('../fonts/CENTAUR.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Hebrew';
+	src: url('../fonts/Hebrew.eot');
+	src: local('Hebrew'), url('../fonts/Hebrew.woff') format('woff'), url('../fonts/Hebrew.otf') format('opentype');
+
+}
+
 body {
     font-family: 'CENTAUR';
 }
@@ -18,7 +25,9 @@ body {
 	/*margin-left: -10px;*/
 }
 .attribution {
-	padding-left: 25px;
+	margin-top: -15px;
+	margin-left: 25px;
+	/*background: red;*/
 }
 .row {
 	overflow: auto;
@@ -139,7 +148,7 @@ body {
 	text-align: center;
 }
 #homeLeft, #homeRight{
-	width: 432px;
+	width: 447px;
 	height: 100%;
 	text-align: justify;
 }
@@ -151,7 +160,7 @@ body {
 }
 #homeLeftBox, #homeRightBox{
 	shape-outside: content-box;
-	margin-top: 100px;
+	margin-top: 150px;
 	width: 110px;
 	height: 488px;
 	/*background: blue;*/
@@ -161,7 +170,7 @@ body {
 	width: 250px;
 	height: 488px;
 	margin-left: 338px;
-	margin-top: 100px;
+	margin-top: 160px;
 	padding-top: 20px;
 	text-align: center;
 	font-size: 12pt;
@@ -173,7 +182,7 @@ body {
 	text-decoration: none;
 }
 .homeTopText{
-	font-size: 12pt;
+	font-size: 16pt;
 }
 #homeDropCapsR {
 	float: left;
@@ -195,6 +204,7 @@ body {
 	margin: 30px auto;
 	font-size: 18pt;
 	font-variant: small-caps;
+	font-weight: bolder;
 }
 #bioTitleLeft {
 	text-align: right;
@@ -212,6 +222,7 @@ body {
 	height: 1150px;
 	margin: 20px auto;
 	text-align: center;
+	/*background: red;*/
 }
 #bioLeft, #bioRight {
 	width: 332px;
@@ -274,6 +285,7 @@ body {
 	margin: 30px auto;
 	font-size: 18pt;
 	font-variant: small-caps;
+	font-weight: bolder;
 }
 #critTitleLeft {
 	text-align: right;
@@ -331,13 +343,13 @@ body {
 #colTitleLeft {
 	text-align: right;
 	float: left;
-	width: 330px;
+	width: 275px;
 }
 #colTitleRight {
 	margin: 0 auto;
 	text-align: left;
 	float: right;
-	width: 330px;
+	width: 405px;
 }
 #colOuter {
 	width: 720px;
@@ -355,6 +367,10 @@ body {
 .colLinks {
 	color: #000000;
 	text-decoration: none;
+}
+
+.colCross {
+	font-weight: lighter;
 }
 
 /*Exhibition Page*/
@@ -399,7 +415,31 @@ body {
 }
 
 /*Publications*/
-
-#bookNote {
+#pubTitle {
+	height: 30px;
+	width: 720px;
+	margin: 30px auto;
+	font-size: 18pt;
+	font-variant: small-caps;
+	font-weight: bolder;
+}
+#pubTitleLeft {
+	text-align: right;
+	float: left;
+	width: 275px;
+}
+#pubTitleRight {
+	margin: 0 auto;
+	text-align: left;
+	float: right;
+	width: 405px;
+}
+#pubBookNote {
 	font-size: 9pt;
+}
+
+/* HEBREW */
+.hebrew {
+	font-family: 'Hebrew';
+	letter-spacing: 2px;
 }
