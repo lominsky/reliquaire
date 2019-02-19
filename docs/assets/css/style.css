@@ -80,11 +80,14 @@ body {
 	font-size: 48pt;
 	text-align: center;
 	margin-top: 100px;
+	letter-spacing: 5px;
 }
 #sbSubtitle {
 	font-size: 24pt;
 	text-align: center;
 	margin-top: 10px;
+	font-variant: small-caps;
+	letter-spacing: 5px;
 }
 #sbBody {
 	margin: 0 auto;
@@ -93,7 +96,7 @@ body {
 	line-height: 26px;
 	text-align: justify;
 	margin-top: 60px;
-	width: 500px;
+	width: 505px;
 }
 #sbEnter {
 	text-align: center;
@@ -323,6 +326,7 @@ body {
 	margin: 30px auto;
 	font-size: 18pt;
 	font-variant: small-caps;
+	font-weight: bolder;
 }
 #colTitleLeft {
 	text-align: right;
