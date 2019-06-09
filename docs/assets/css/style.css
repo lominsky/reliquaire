@@ -202,9 +202,9 @@ body {
 	height: 30px;
 	width: 720px;
 	margin: 30px auto;
-	font-size: 18pt;
+	font-size: 26pt;
 	font-variant: small-caps;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 #bioTitleLeft {
 	text-align: right;
@@ -283,9 +283,9 @@ body {
 	height: 30px;
 	width: 720px;
 	margin: 30px auto;
-	font-size: 18pt;
+	font-size: 26pt;
 	font-variant: small-caps;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 #critTitleLeft {
 	text-align: right;
@@ -336,9 +336,9 @@ body {
 	height: 30px;
 	width: 720px;
 	margin: 30px auto;
-	font-size: 18pt;
+	font-size: 26pt;
 	font-variant: small-caps;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 #colTitleLeft {
 	text-align: right;
