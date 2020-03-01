@@ -375,6 +375,25 @@ body {
 
 /*Exhibition Page*/
 
+#exTitle {
+	height: 30px;
+	width: 720px;
+	margin: 30px auto;
+	font-size: 26pt;
+	font-variant: small-caps;
+	/*font-weight: bolder;*/
+}
+#exTitleLeft {
+	text-align: right;
+	float: left;
+	width: 275px;
+}
+#exTitleRight {
+	margin: 0 auto;
+	text-align: left;
+	float: right;
+	w
+
 .exItem {
 	/*background: yellow;*/
 	/*width: 100%;*/
