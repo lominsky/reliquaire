@@ -44,7 +44,7 @@ body {
     vertical-align: top;
 }
 .rightColumn {
-	width: 45%;
+	width: 50%;
 	/*background-color: red;*/
 	display: table-cell;
 	text-align: left;
