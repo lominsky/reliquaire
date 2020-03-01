@@ -1,0 +1,5 @@
+TODO
+
+SusanBarron/home.html
+	Reduce the spaces between words in the paragraphs
+Excerpts Return to index appears in the center of the page on susan's computer but not mine
