@@ -27,6 +27,10 @@ body {
 	/*margin-left: -10px;*/
 }
 
+.smallCaps {
+	font-variant: small-caps;
+}
+
 .ellipsis {
 	padding: 0px 5px 0px 5px;
 }
@@ -453,23 +457,36 @@ body {
 	height: 30px;
 	width: 720px;
 	margin: 30px auto;
-	font-size: 18pt;
+	font-size: 26pt;
 	font-variant: small-caps;
 	font-weight: bolder;
 }
 #pubTitleLeft {
 	text-align: right;
 	float: left;
-	width: 275px;
+	width: 245px;
 }
 #pubTitleRight {
 	margin: 0 auto;
 	text-align: left;
-	float: right;
-	width: 405px;
+	float: left;
+	padding-left: 42px;
+	/*width: 305px;*/
 }
 #pubBookNote {
 	font-size: 9pt;
+}
+.pubRightColumn {
+	width: 53%;
+	/*background-color: red;*/
+	display: table-cell;
+	text-align: left;
+}
+.periodicals {
+    margin-left: 200px;
+}
+.periodicals::first-line {
+    margin-left: 0px;
 }
 
 /* HEBREW */
