@@ -24,6 +24,11 @@ body {
 	padding-left: 3px;
 	/*margin-left: -10px;*/
 }
+
+.ellipsis {
+	padding: 0px 5px 0px 5px;
+}
+
 .attribution {
 	margin-top: -15px;
 	margin-left: 25px;
@@ -162,7 +167,7 @@ body {
 	shape-outside: content-box;
 	margin-top: 150px;
 	width: 110px;
-	height: 488px;
+	height: 410px;
 	/*background: blue;*/
 }
 #homeLinks{
@@ -171,7 +176,7 @@ body {
 	height: 488px;
 	margin-left: 338px;
 	margin-top: 160px;
-	padding-top: 20px;
+	padding-top: 15px;
 	text-align: center;
 	font-size: 12pt;
 	text-transform: uppercase;
