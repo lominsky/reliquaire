@@ -16,6 +16,33 @@ body {
     background-color: #4d553e;
     /*background-color: #FFFF00;*/
 }
+
+html {
+	background-color: #74815c;
+}
+
+#homeDropCapsR {
+	float: left;
+	/*left: -50px; */
+	font-size: 50px; 
+	line-height: 32px; 
+	padding-top: 10px; 
+	/*padding-right: 20px; */
+	/*padding-left: -30px;*/
+	margin-left: -110px;
+	margin-right: 10px;
+}
+
+#homeDropCapsU {
+	float: left;
+	left: -50px; 
+	font-size: 50px; 
+	line-height: 32px; 
+	padding-top: 12px; 
+	padding-right: 2px; 
+	padding-left: 3px;
+}
+
 .dropCaps { 
 	float: left;
 	left: -50px; 
@@ -61,6 +88,30 @@ body {
 	text-align: left;
 }
 
+
+.grantsRightColumn {
+	width: 60%;
+	/*background-color: red;*/
+	display: table-cell;
+	text-align: left;
+}
+
+.grantsLeftColumn {
+	width: 35%;
+	/*background-color: blue;*/
+	display: table-cell;
+	padding-right: 40px;
+	text-align: right;
+    vertical-align: top;
+}
+
+.grantsRow {
+	overflow: auto;
+	/*background-color: yellow;*/
+	min-height: 5px;
+	display: table-row;
+}
+
 /*Root Page*/
 
 #rootTitle {
@@ -99,7 +150,7 @@ body {
 #sbTitle {
 	font-size: 48pt;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 20px;
 	letter-spacing: 5px;
 }
 #sbSubtitle {
@@ -112,12 +163,17 @@ body {
 #sbBody {
 	margin: 0 auto;
 	font-variant: small-caps;
-	font-size: 18pt;
-	line-height: 26px;
-	text-align: justify;
-	margin-top: 60px;
-	width: 505px;
+	font-size: 14pt;
+	line-height: 22px;
+	text-align: center;
+	margin-top: 34px;
+	width: 1200px;
 }
+
+.copyright {
+	font-size: 12pt;
+}
+
 #sbEnter {
 	text-align: center;
 	margin-top: 20px;
@@ -143,7 +199,7 @@ body {
 #preHome {
 	margin: 0 auto;
 	width: 526px;
-	margin-top: 135px;
+	margin-top: 30px;
 	font-size: 10pt;
 	text-align: right;
 	line-height: 16pt;
@@ -195,16 +251,7 @@ body {
 .homeTopText{
 	font-size: 16pt;
 }
-#homeDropCapsR {
-	float: left;
-	left: -50px; 
-	font-size: 50px; 
-	line-height: 32px; 
-	padding-top: 4px; 
-	padding-right: 2px; 
-	padding-left: 3px;
-	margin-left: -113px;
-}
+
 
 
 /*Biography Page*/
@@ -432,20 +479,50 @@ body {
 }
 
 /*Contact*/
-#contactBody {
-	font-size: 16pt;
+#contactTitle {
+	font-size: 64pt;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
+	/*height: 50px;*/
+}
+
+#contactTitle img {
+	height: 100px;
+}
+
+#contactBody {
+	font-size: 20pt;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 50px;
 }
 
 #contactBody a {
 	color: black;
 	text-decoration: none;
+	font-size: 22pt;
 }
 
 #contactTitle {
 	margin-top: 50px;
 	text-align: center
+}
+
+#contactLink {
+	margin: 100px auto;
+	text-align: center;
+	font-size: 16pt;
+	font-variant: small-caps;
+}
+
+#contactFooter {
+	margin: 0 auto;
+	font-variant: small-caps;
+	font-size: 14pt;
+	line-height: 26px;
+	text-align: center;
+	margin-top: 100px;
+	width: 1050px;
 }
 
 .reliquaireQ {

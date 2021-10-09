@@ -2,10 +2,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel='icon' href='assets/img/favicon.png'>
 
-	<title>reliQuaire | Art Registry</title>
-  
+	<title>Susan Barron | Works on Paper</title>
+
 	<style type="text/css">
+<<<<<<< Updated upstream
 		body {	background-color: #524f3f;	}
+=======
+		/*body {	background-color: #74815c;	}*/
+>>>>>>> Stashed changes
 	</style>
 
 	<!-- Default Statcounter code for Reliquaire
@@ -27,17 +31,33 @@
 </head>
 
 <body>
-	<div id="rootTitle">
-		<!-- RELI<span id="rootTitleQ">Q</span>UAIRE -->
-		<img src="assets/img/reliquaire.png">
+	<div id="sbTitle">
+		SUSAN<span style="padding: 0px 20px 0px 20px">&middot;</span>BARRON
 	</div>
 
+<<<<<<< Updated upstream
 	<div id="rootBody">
 		Reliquaire.org is an art registry, featuring the work of established artists in all media. Artists are selected by internal committee. We are not able to receive unsolicited referrals or materials.
+=======
+<!-- 	<div id="sbSubtitle">
+		works on paper
+	</div> -->
+
+	<div id="preHome">
+		<a href="SusanBarron/home.html"><img src="assets/img/start_image.jpg"></a>
+		Click image to ENTER
+>>>>>>> Stashed changes
 	</div>
 
-	<div id="rootEnter">
-		<a href="SusanBarron/index.html" id="rootEnterLink">Enter</a>
+	<div id="sbBody">
+		Most images are reproduced actual size. It is recommended that you not view this site on a mobile device.
+		<br>
+		<span class="copyright">All works copyright &copy; 1975-<span id="currentYear">2021</span> by Susan Barron. Unauthorized reproduction or duplication of images or texts is strictly prohibited. All rights reserved.</span>
 	</div>
-
 </body>
+
+<script>
+	var now = new Date();
+	var year = 1900 + now.getYear();
+	document.getElementById("currentYear").innerHTML = year;
+</script>
