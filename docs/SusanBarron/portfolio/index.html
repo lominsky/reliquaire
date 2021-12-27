@@ -1,30 +1,132 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Susan Barron | Portfolio</title>
-<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
-<style type="text/css">
-<!--
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
--->
-</style></head>
-<body bgcolor="#5f694d;">
-<!--url's used in the movie-->
-<!--text used in the movie-->
-<!--
-<p align="center"></p>
--->
-<!-- saved from url=(0013)about:internet -->
-<script type="text/javascript">
-AC_FL_RunContent( 'codebase','http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0','width','100%','height','100%','id','portfolio1','align','middle','src','portfolio1','quality','best','scale','noscale','salign','t','bgcolor','#485039','name','portfolio1','allowscriptaccess','sameDomain','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','portfolio1' ); //end AC code
-</script><noscript><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="100%" height="100%" id="portfolio1" align="middle">
-<param name="allowScriptAccess" value="sameDomain" />
-<param name="movie" value="portfolio1.swf" /><param name="quality" value="best" /><param name="scale" value="noscale" /><param name="salign" value="t" /><param name="bgcolor" value="#485039" /><embed src="portfolio1.swf" quality="best" scale="noscale" salign="t" bgcolor="#485039" width="100%" height="100%" name="portfolio1" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-</object></noscript>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+	<link rel='icon' href='../../assets/img/favicon.png'>
+	<script type="text/javascript" src="../../assets/jquery-3.6.0.min.js"></script>
+
+	<title>Susan Barron | Artist's Books</title>
+</head>
+
+<body>
+	<div class="slideshow">
+		<div class="slide" slide="0">
+			<img src="imgs/04.jpeg" style="margin-top: 5px">
+			<!-- <p>This is a cat</p> -->
+		</div>
+		
+		<div class="slide" slide="1" hidden>
+			<img src="imgs/07.jpeg">
+			<!-- <p>Wow, what a cat</p> -->
+		</div>
+		
+		<div class="slide" slide="2" hidden>
+			<img src="imgs/11.jpeg"  style="margin-top: 5px">
+			<!-- <p>Have you ever seen such a cat?</p> -->
+		</div>
+		
+		<div class="slide" slide="3" hidden>
+			<img src="imgs/12.jpeg" style="margin-top: 5px">
+			<!-- <p>So nice looking</p> -->
+		</div>
+		
+		<div class="slide" slide="4" hidden>
+			<img src="imgs/15.jpeg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="5" hidden>
+			<img src="imgs/16gu.jpg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="6" hidden>
+			<img src="imgs/16.jpeg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="7" hidden>
+			<img src="imgs/17.jpeg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="8" hidden>
+			<img src="imgs/18.jpeg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="9" hidden>
+			<img src="imgs/D_04.jpeg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="10" hidden>
+			<img src="imgs/D_14_2.jpg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="11" hidden>
+			<img src="imgs/D_15_2.jpg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="12" hidden>
+			<img src="imgs/D_X019a.jpeg" style="margin-top: 5px">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+		
+		<div class="slide" slide="13" hidden>
+			<img src="imgs/music_013a.jpg">
+			<!-- <p>Can't wait for more cats</p> -->
+		</div>
+	</div>
+
+	<div style="text-align: center">
+		<div class="slideshowButton" id="slideStop">STOP</div>
+		<div class="slideshowButton" id="slideStart" style="display: none">START</div>
+		<!-- <button class="slideshowButton" id="slideStop">Stop</button>
+		<button class="slideshowButton" id="slideStart" style="display: none">Continue</button> -->
+	</div>
 </body>
+
+<script type="text/javascript">
+		let current = 0;
+		let count = $(".slide").length;
+		let slideDuration = 9000;
+		let fadeDuration = 600;
+		let lastChange = performance.now();
+		let timeLeft = slideDuration;
+
+		let int = setInterval(slideshow, slideDuration);
+
+		function slideshow() {
+			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {
+				current = (current + 1) % count;
+				$('[slide="' + current + '"]').fadeIn(fadeDuration, function() {
+					lastChange = performance.now();
+				});
+			});
+		}
+
+		function stopShow() {
+			timeLeft = slideDuration - (performance.now() - lastChange);
+			console.log(timeLeft)
+			$("#slideStop").hide();
+			$("#slideStart").show();
+
+			clearInterval(int);
+		}
+
+		function continueShow() {
+			$("#slideStop").show();
+			$("#slideStart").hide();
+			setTimeout(function() {
+				slideshow();
+				int = setInterval(slideshow, slideDuration);
+			}, timeLeft);
+		}
+
+		$("#slideStop").click(stopShow);
+		$("#slideStart").click(continueShow);
+</script>
+
 </html>

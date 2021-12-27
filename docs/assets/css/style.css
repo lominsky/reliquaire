@@ -16,7 +16,10 @@ body {
 }
 
 html {
-	background-color: #74815c;
+	/*background-color: #74815c;*/
+	background-color: #5a7e63;
+	/*background-color: #6f816f;*/
+	/*background-color: #4a6651;*/
 }
 
 #homeDropCapsR {
@@ -139,7 +142,7 @@ html {
 #sbTitle {
 	font-size: 48pt;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 65px;
 	letter-spacing: 5px;
 }
 #sbSubtitle {
@@ -187,11 +190,15 @@ html {
 
 #preHome {
 	margin: 0 auto;
-	width: 526px;
+	width: 405;
 	margin-top: 30px;
 	font-size: 10pt;
 	text-align: right;
 	line-height: 16pt;
+}
+
+#prehomeImg {
+	height: 340px;
 }
 
 
@@ -285,7 +292,7 @@ html {
 #bioLeftBox, #bioRightBox {
 	shape-outside: content-box;
 	margin-top: 280px;
-	width: 160px;
+	width: 146px; /*Originally 160*/
 	height: 420px;
 	/*background: blue;*/
 }
@@ -318,7 +325,7 @@ html {
 	padding-top: 4px; 
 	padding-right: 2px; 
 	padding-left: 3px;
-	margin-left: -163px;
+	margin-left: -149;
 }
 
 
@@ -490,7 +497,7 @@ html {
 }
 
 #contactLink {
-	margin: 100px auto;
+	margin: 30px auto;
 	text-align: center;
 	font-size: 16pt;
 	font-variant: small-caps;
@@ -502,7 +509,7 @@ html {
 	font-size: 14pt;
 	line-height: 26px;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 170px;
 	width: 1050px;
 }
 
@@ -538,4 +545,43 @@ html {
 .hebrew {
 	font-family: 'Hebrew';
 	letter-spacing: 4px;
+}
+
+.slideshow {
+	/*background-color: red;*/
+	text-align: center;
+	margin: 40px auto;
+	width: 90%;
+}
+
+.slideshow .slide {
+	/*background-color: green;*/
+}
+
+.slideshow img {
+	min-width: 400px;
+	max-height: 600px;
+	border: 1px solid #000;
+}
+
+.slideshow p {
+	margin: 10px auto;
+	width: 400px;
+	text-align: left;
+}
+
+.slideshowButton {
+  font-family: 'CENTAUR';
+  background-color: #00000000; /* Green */
+  border: 1px black solid;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  right: 16px;
+  bottom: 14px;
+  position:absolute;
+  font-size: 12px;
+  width: 35px;
 }
