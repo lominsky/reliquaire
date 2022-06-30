@@ -17,7 +17,8 @@ body {
 
 html {
 	/*background-color: #74815c;*/
-	background-color: #5a7e63;
+	background-color: #5a7e63; /*Up till 5/31/22*/
+	background-color: #4a6e43;
 	/*background-color: #6f816f;*/
 	/*background-color: #4a6651;*/
 }
@@ -273,7 +274,7 @@ html {
 }
 #bioOuter {
 	width: 900px;
-	height: 950px;
+	height: 830px;
 	margin: 20px auto;
 	text-align: center;
 	/*background: red;*/
@@ -354,7 +355,7 @@ html {
 }
 #critOuter {
 	width: 720px;
-	height: 2550px;
+	height: 2391px;
 	margin: 20px auto;
 	text-align: center;
 }
@@ -470,7 +471,7 @@ html {
 #contactTitle {
 	font-size: 64pt;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 90px;
 	/*height: 50px;*/
 }
 
@@ -491,10 +492,10 @@ html {
 	font-size: 22pt;
 }
 
-#contactTitle {
+/*#contactTitle {
 	margin-top: 50px;
 	text-align: center
-}
+}*/
 
 #contactLink {
 	margin: 30px auto;
@@ -509,7 +510,7 @@ html {
 	font-size: 14pt;
 	line-height: 26px;
 	text-align: center;
-	margin-top: 170px;
+	margin-top: 120px;
 	width: 1050px;
 }
 
@@ -573,7 +574,7 @@ html {
 .slideshowButton {
   font-family: 'CENTAUR';
   background-color: #00000000; /* Green */
-  border: 1px black solid;
+  border: 1.5px black solid;
   color: black;
   padding: 10px 10px 10px 10px;
   text-align: center;
@@ -582,6 +583,10 @@ html {
   right: 16px;
   bottom: 14px;
   position:absolute;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 800;
   width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  
 }

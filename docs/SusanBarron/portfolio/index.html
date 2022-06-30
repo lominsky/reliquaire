@@ -9,80 +9,81 @@
 
 <body>
 	<div class="slideshow">
-		<div class="slide" slide="0">
-			<img src="imgs/04.jpeg" style="margin-top: 5px">
+		<div class="slide" slide="0" hidden>
+			<img src="imgs/04.jpeg" style="margin-top: 55px" >
 			<!-- <p>This is a cat</p> -->
 		</div>
 		
 		<div class="slide" slide="1" hidden>
-			<img src="imgs/07.jpeg">
+			<img src="imgs/07.jpeg" style="margin-top: 55px">
 			<!-- <p>Wow, what a cat</p> -->
 		</div>
 		
 		<div class="slide" slide="2" hidden>
-			<img src="imgs/11.jpeg"  style="margin-top: 5px">
+			<img src="imgs/11.jpeg"  style="margin-top: 55px">
 			<!-- <p>Have you ever seen such a cat?</p> -->
 		</div>
 		
 		<div class="slide" slide="3" hidden>
-			<img src="imgs/12.jpeg" style="margin-top: 5px">
+			<img src="imgs/12.jpeg" style="margin-top: 55px">
 			<!-- <p>So nice looking</p> -->
 		</div>
 		
 		<div class="slide" slide="4" hidden>
-			<img src="imgs/15.jpeg" style="margin-top: 5px">
+			<img src="imgs/15.jpeg" style="margin-top: 55px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="5" hidden>
-			<img src="imgs/16gu.jpg" style="margin-top: 5px">
+			<img src="imgs/16gu.jpg" style="margin-top: 55px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="6" hidden>
-			<img src="imgs/16.jpeg" style="margin-top: 5px">
+			<img src="imgs/16.jpeg" style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="7" hidden>
-			<img src="imgs/17.jpeg" style="margin-top: 5px">
+			<img src="imgs/17.jpeg" style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="8" hidden>
-			<img src="imgs/18.jpeg" style="margin-top: 5px">
+			<img src="imgs/18.jpeg" style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="9" hidden>
-			<img src="imgs/D_04.jpeg" style="margin-top: 5px">
+			<img src="imgs/D_04.jpg" style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="10" hidden>
-			<img src="imgs/D_14_2.jpg" style="margin-top: 5px">
+			<img src="imgs/D_14_2.jpg" style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="11" hidden>
-			<img src="imgs/D_15_2.jpg" style="margin-top: 5px">
+			<img src="imgs/D_15_2.jpg" style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
 		<div class="slide" slide="12" hidden>
-			<img src="imgs/D_X019a.jpeg" style="margin-top: 5px">
+			<img src="imgs/D_X019a.jpeg" style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 		
-		<div class="slide" slide="13" hidden>
-			<img src="imgs/music_013a.jpg">
+		<div class="slide" slide="13" >
+			<img src="imgs/music_013a.jpg"style="margin-top: 60px">
 			<!-- <p>Can't wait for more cats</p> -->
 		</div>
 	</div>
 
 	<div style="text-align: center">
-		<div class="slideshowButton" id="slideStop">STOP</div>
-		<div class="slideshowButton" id="slideStart" style="display: none">START</div>
+		<div class="slideshowButton" id="slideStop"><div style="margin-top: 9px;letter-spacing: 1px;">STOP</div></div>
+		<div class="slideshowButton" id="slideStart" style="display: none"><div style="margin-top: 9px;
+    margin-left: -2px;">START</div></div>
 		<!-- <button class="slideshowButton" id="slideStop">Stop</button>
 		<button class="slideshowButton" id="slideStart" style="display: none">Continue</button> -->
 	</div>
@@ -96,7 +97,7 @@
 		let lastChange = performance.now();
 		let timeLeft = slideDuration;
 
-		let int = setInterval(slideshow, slideDuration);
+		// let int = setInterval(slideshow, slideDuration);
 
 		function slideshow() {
 			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {
@@ -127,6 +128,17 @@
 
 		$("#slideStop").click(stopShow);
 		$("#slideStart").click(continueShow);
+
+		// $("body").keypress(function(e){
+		// 	console.log(e);
+		// 	if(e.originalEvent.keyCode == 106) {
+		// 		slideshow(-1);
+		// 	} else if(e.originalEvent.keyCode == 107) {
+		// 		slideshow();
+		// 	} 
+  // 			// $("span").text(i += 1);
+		// });
+
 </script>
 
 </html>
