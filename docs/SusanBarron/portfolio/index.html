@@ -97,7 +97,7 @@
 		let lastChange = performance.now();
 		let timeLeft = slideDuration;
 
-		// let int = setInterval(slideshow, slideDuration);
+		let int = setInterval(slideshow, slideDuration);
 
 		function slideshow() {
 			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {

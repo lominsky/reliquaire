@@ -18,7 +18,9 @@ body {
 html {
 	/*background-color: #74815c;*/
 	background-color: #5a7e63; /*Up till 5/31/22*/
-	background-color: #4a6e43;
+	background-color: #4a6e43; /*Up till 8/25/22*/
+	background-color: #496e4d;
+	background-color: #446948;
 	/*background-color: #6f816f;*/
 	/*background-color: #4a6651;*/
 }
@@ -471,7 +473,7 @@ html {
 #contactTitle {
 	font-size: 64pt;
 	text-align: center;
-	margin-top: 90px;
+	margin-top: 60px;
 	/*height: 50px;*/
 }
 
