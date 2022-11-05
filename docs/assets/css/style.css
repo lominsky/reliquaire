@@ -558,13 +558,18 @@ html {
 }
 
 .slideshow .slide {
-	/*background-color: green;*/
+	/*background-color: yellow;*/
+	height: 80%;
 }
 
 .slideshow img {
-	min-width: 400px;
-	max-height: 600px;
-	border: 1px solid #000;
+	/*background-color: blue;*/
+	/*min-width: 400px;*/
+	/*width: 70%;*/
+	/*max-height: 600px;*/
+	/*max-height: 80%;*/
+	height: 100%;
+	border: 2px solid #000;
 }
 
 .slideshow p {
