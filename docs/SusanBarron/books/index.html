@@ -1,85 +1,47 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-	<link rel='icon' href='../../assets/img/favicon.png'>
-	<script type="text/javascript" src="../../assets/jquery-3.6.0.min.js"></script>
+	<link rel='icon' href='../assets/img/favicon.png'>
 
 	<title>Susan Barron | Artist's Books</title>
+  
+	<style type="text/css">
+		/*body {	background-color: #5f694d;	}*/
+	</style>
+
+	<!-- Default Statcounter code for Reliquaire
+	http://reliquaire.org -->
+	<script type="text/javascript">
+	var sc_project=12209630; 
+	var sc_invisible=1; 
+	var sc_security="3e8934ba"; 
+	</script>
+	<script type="text/javascript"
+	src="https://www.statcounter.com/counter/counter.js"
+	async></script>
+	<noscript><div class="statcounter"><a title="Web Analytics"
+	href="https://statcounter.com/" target="_blank"><img
+	class="statcounter"
+	src="https://c.statcounter.com/12209630/0/3e8934ba/1/"
+	alt="Web Analytics"></a></div></noscript>
+	<!-- End of Statcounter Code -->
 </head>
 
 <body>
-	<div class="slideshow">
-		<div class="slide" slide="0">
-			<img src="imgs/img1.jpg">
-			<p>This is a cat</p>
-		</div>
-		
-		<div class="slide" slide="1" hidden>
-			<img src="imgs/img2.jpg">
-			<p>Wow, what a cat</p>
-		</div>
-		
-		<div class="slide" slide="2" hidden>
-			<img src="imgs/img3.jpeg">
-			<p>Have you ever seen such a cat?</p>
-		</div>
-		
-		<div class="slide" slide="3" hidden>
-			<img src="imgs/img4.jpg">
-			<p>So nice looking</p>
-		</div>
-		
-		<div class="slide" slide="4" hidden>
-			<img src="imgs/img5.jpg">
-			<p>Can't wait for more cats</p>
-		</div>
+	<div id="contactTitle">
+		<!-- RELI<span id="rootTitleQ">Q</span>UAIRE -->
+		<img src="../../assets/img/reliquaire.png">
 	</div>
 
-	<div style="margin: 0px auto; text-align: center">
-		<button id="slideStop">Stop Slideshow</button>
-		<button id="slideStart" style="display: none">Continue Slideshow</button>
+	<div id="contactBody">
+		<p>A selection of images from Barron&#8217;s fifty one-of-a-kind artist&#8217;s books is in progress.</p>
+		<p>Her first book, <i style="font-variant: none">another song</i> <span style="font-size: 14pt;padding-left: 1px;"><span style="letter-spacing: -1px">(1</span>9<span style="letter-spacing: -1px">81</span>)</span><span style="padding-left: 1px">,</span> is in an edition of <span style="font-size: 14pt">51</span> copies. Similarly, this book also consists of original works, not reproductions. It was co-authored with composer John Cage, who wrote a poem for Barron&#8217;s sequence of photographs.</p>
+		<p>In the meantime all book-works can be viewed by appointment via the <a href="../contact.html">Contact page</a>.</p>
 	</div>
+
+	<br><br><br><br>
+
+	<div id="contactLink">
+		<a class="colLinks" href="../home.html">&middot; Return To Index &middot;</a>
+	</div>
+
 </body>
-
-<script type="text/javascript">
-		let current = 0;
-		let count = $(".slide").length;
-		let slideDuration = 5000;
-		let fadeDuration = 600;
-		let lastChange = performance.now();
-		let timeLeft = slideDuration;
-
-		let int = setInterval(slideshow, slideDuration);
-
-		function slideshow() {
-			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {
-				current = (current + 1) % count;
-				$('[slide="' + current + '"]').fadeIn(fadeDuration, function() {
-					lastChange = performance.now();
-				});
-			});
-		}
-
-		function stopShow() {
-			timeLeft = slideDuration - (performance.now() - lastChange);
-			console.log(timeLeft)
-			$("#slideStop").hide();
-			$("#slideStart").show();
-
-			clearInterval(int);
-		}
-
-		function continueShow() {
-			$("#slideStop").show();
-			$("#slideStart").hide();
-			setTimeout(function() {
-				slideshow();
-				int = setInterval(slideshow, slideDuration);
-			}, timeLeft);
-		}
-
-		$("#slideStop").click(stopShow);
-		$("#slideStart").click(continueShow);
-</script>
-
-</html>

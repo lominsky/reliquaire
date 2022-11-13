@@ -77,10 +77,10 @@
 			<img src="imgs/30_D_D_133.jpg" style="margin-top: 0px" >
 			<!-- <p>Optional Caption</p> -->
 		</div>
-		<div class="slide" slide="17" hidden>
+<!-- 		<div class="slide" slide="17" hidden>
 			<img src="imgs/30_E_W_P_POR_50.jpg" style="margin-top: 0px" >
 			<!-- <p>Optional Caption</p> -->
-		</div>
+		</div> -->
 		<div class="slide" slide="18" hidden>
 			<img src="imgs/30_F_W_P_ABS_09.jpg" style="margin-top: 0px" >
 			<!-- <p>Optional Caption</p> -->
@@ -254,6 +254,7 @@
 		function slideshow() {
 			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {
 				current = (current + 1) % count;
+				current == 17 ? current++ : current = current;
 				$('[slide="' + current + '"]').fadeIn(fadeDuration, function() {
 					lastChange = performance.now();
 				});

@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+	<link rel='icon' href='../../assets/img/favicon.png'>
+	<script type="text/javascript" src="../../assets/jquery-3.6.0.min.js"></script>
+
+	<title>Susan Barron | Artist's Books</title>
+</head>
+
+<body>
+	<div class="slideshow">
+		<div class="slide" slide="0">
+			<img src="imgs/img1.jpg">
+			<p>This is a cat</p>
+		</div>
+		
+		<div class="slide" slide="1" hidden>
+			<img src="imgs/img2.jpg">
+			<p>Wow, what a cat</p>
+		</div>
+		
+		<div class="slide" slide="2" hidden>
+			<img src="imgs/img3.jpeg">
+			<p>Have you ever seen such a cat?</p>
+		</div>
+		
+		<div class="slide" slide="3" hidden>
+			<img src="imgs/img4.jpg">
+			<p>So nice looking</p>
+		</div>
+		
+		<div class="slide" slide="4" hidden>
+			<img src="imgs/img5.jpg">
+			<p>Can't wait for more cats</p>
+		</div>
+	</div>
+
+	<div style="margin: 0px auto; text-align: center">
+		<button id="slideStop">Stop Slideshow</button>
+		<button id="slideStart" style="display: none">Continue Slideshow</button>
+	</div>
+</body>
+
+<script type="text/javascript">
+		let current = 0;
+		let count = $(".slide").length;
+		let slideDuration = 5000;
+		let fadeDuration = 600;
+		let lastChange = performance.now();
+		let timeLeft = slideDuration;
+
+		let int = setInterval(slideshow, slideDuration);
+
+		function slideshow() {
+			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {
+				current = (current + 1) % count;
+				$('[slide="' + current + '"]').fadeIn(fadeDuration, function() {
+					lastChange = performance.now();
+				});
+			});
+		}
+
+		function stopShow() {
+			timeLeft = slideDuration - (performance.now() - lastChange);
+			console.log(timeLeft)
+			$("#slideStop").hide();
+			$("#slideStart").show();
+
+			clearInterval(int);
+		}
+
+		function continueShow() {
+			$("#slideStop").show();
+			$("#slideStart").hide();
+			setTimeout(function() {
+				slideshow();
+				int = setInterval(slideshow, slideDuration);
+			}, timeLeft);
+		}
+
+		$("#slideStop").click(stopShow);
+		$("#slideStart").click(continueShow);
+</script>
+
+</html>
