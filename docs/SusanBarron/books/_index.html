@@ -50,6 +50,7 @@
 		let timeLeft = slideDuration;
 
 		let int = setInterval(slideshow, slideDuration);
+		let timeout = null;
 
 		function slideshow() {
 			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {
@@ -67,12 +68,13 @@
 			$("#slideStart").show();
 
 			clearInterval(int);
+			clearTimeout(timeout);
 		}
 
 		function continueShow() {
 			$("#slideStop").show();
 			$("#slideStart").hide();
-			setTimeout(function() {
+			timeout = setTimeout(function() {
 				slideshow();
 				int = setInterval(slideshow, slideDuration);
 			}, timeLeft);

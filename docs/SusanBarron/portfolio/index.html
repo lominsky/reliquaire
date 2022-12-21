@@ -9,7 +9,7 @@
 
 <body>
 	<div class="slideshow">
-		<div class="slide" slide="0" hidden>
+		<div class="slide" slide="0">
 			<img src="imgs/10_A_W_P_ABS_05 copy 2.jpg" style="margin-top: 0px; height: 60%" >
 			<!-- <p>Optional Caption</p> -->
 		</div>
@@ -243,12 +243,13 @@
 <script type="text/javascript">
 		let current = 0;
 		let count = $(".slide").length;
-		let slideDuration = 4000;
+		let slideDuration = 6000;
 		let fadeDuration = 600;
 		let lastChange = performance.now();
 		let timeLeft = slideDuration;
 
 		let int = setInterval(slideshow, slideDuration);
+		let timeout = null;
 
 		function slideshow() {
 			$('[slide="' + current + '"]').fadeOut(fadeDuration, function() {
@@ -267,12 +268,13 @@
 			$("#slideStart").show();
 
 			clearInterval(int);
+			clearTimeout(timeout);
 		}
 
 		function continueShow() {
 			$("#slideStop").show();
 			$("#slideStart").hide();
-			setTimeout(function() {
+			timeout = setTimeout(function() {
 				slideshow();
 				int = setInterval(slideshow, slideDuration);
 			}, timeLeft);
