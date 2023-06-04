@@ -26,6 +26,10 @@ html {
 	/*background-color: #4a6651;*/
 }
 
+.returnSpace {
+	padding-right: 3px;
+}
+
 #homeDropCapsR {
 	float: left;
 	/*left: -50px; */
@@ -404,13 +408,13 @@ html {
 #colTitleLeft {
 	text-align: right;
 	float: left;
-	width: 275px;
+	width: 258px;
 }
 #colTitleRight {
 	margin: 0 auto;
 	text-align: left;
 	float: right;
-	width: 405px;
+	width: 424px;
 }
 #colOuter {
 	width: 720px;
@@ -448,12 +452,13 @@ html {
 #exTitleLeft {
 	text-align: right;
 	float: left;
-	width: 275px;
+	width: 298px;
 }
 #exTitleRight {
 	margin: 0 auto;
 	text-align: left;
-	float: right;
+	float: right;    
+	width: 389px;
 }
 
 .exItem {
