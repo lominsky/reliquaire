@@ -531,20 +531,20 @@ html {
 	width: 720px;
 	margin: 30px auto;
 	margin-top: 70px;
-	font-size: 18pt;
+	font-size: 26pt;
 	font-variant: small-caps;
 	font-weight: bolder;
 }
 #pubTitleLeft {
 	text-align: right;
 	float: left;
-	width: 275px;
+	width: 258px;
 }
 #pubTitleRight {
 	margin: 0 auto;
 	text-align: left;
 	float: right;
-	width: 405px;
+	width: 424px;
 }
 #pubBookNote {
 	font-size: 9pt;
