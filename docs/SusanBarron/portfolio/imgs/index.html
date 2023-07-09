@@ -8,13 +8,13 @@
   <script>
     let names = ["10_E_C_97 copy 2.jpg","10_A_W_P_ABS_05 copy 2.jpg","10_B_C_30NeedsRescan copy copy 2.jpg","10_C_D_74 copy.jpg","10_D_W_P_ABS_143 copy 3.jpg","10_F_EW_ABS_16 copy 2.jpg","10_G_C_63 copy copy.jpg","10_H_W_P_ABS_37 copy 2.jpg","10_I_C_02.jpg","20_A_C_38.jpg","20_B_D_X054_2.jpg","20_D_18.jpg","20_E_C_24.jpg","30_A_D_13.jpg","30_B_Z_909.jpg","30_C_EW_POR_36.jpg","30_D_D_133.jpg","30_E_W_P_POR_50.jpg","30_F_W_P_ABS_09.jpg","40_A_C_5b.jpg","40_B_W_P_LS_113.jpg","40_C_C_6b.jpg","40_D_W_P_LS_112.jpg","40_E_C_4b .jpg","50_A_W_P_LS_158.jpg","50_B_W_P_LS_242.jpg","50_C_12.jpg","50_D_W_P_LS_241.jpg","50_E_W_P_LS_172.jpg","60_A_C_15.jpg","60_C_Z_9078a.jpg","60_D_W_P_LS_237.jpg","60_E_10.jpg","60_F_W_P_ABS_141.jpg","60_G_Z_91011a.jpg","70_A_W_P_ABS_132.jpg","70_B_new_020 copy.jpg","70_B_new_020 copy.psd","70_C_W_P_ABS_08.jpg","70_D_D_14.jpg","70_E_W_P_ABS_147.jpg","70_F_D_15.jpg","70_G_W_P_ABS_144.jpg","80_A_D_160.jpg","80_B_W_LS_88.jpg","80_C_D_980.jpg","80_D_W_P_ABS_148.jpg","80_E_.14.jpg","80_F_W_P_LS_69b.jpg","80_G_D_04.jpg","80_H_W_P_LS_114.jpg","80_I_W_P_ABS_140.jpg","80_J_W_P_Z_888.jpg","80_K_W_P_ABS_06.jpg","80_L_W_P_ABS_07.jpg","80_M_D_X070.jpg"];
 
-    for(let i of names) {
+    for(let i in names) {
       console.log(i);
       let div = document.createElement("div");
       let img = document.createElement("img");
-      img.src = "./" + i
+      img.src = "./" + names[i]
       let p = document.createElement("p");
-      p.innerText = i;
+      p.innerText = (parseInt(i)+1) + ": " + names[i];
 
       div.append(img);
       div.append(p);
