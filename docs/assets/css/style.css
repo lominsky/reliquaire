@@ -26,8 +26,12 @@ html {
 	/*background-color: #4a6651;*/
 }
 
+html.text {
+	background-color: #e6cba5;
+}
+
 .returnSpace {
-	padding-right: 3px;
+	padding-right: 3.5px;
 }
 
 #homeDropCapsR {
