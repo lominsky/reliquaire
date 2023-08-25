@@ -253,6 +253,12 @@
 </style>
 
 <script type="text/javascript">
+	$("body").keydown((e) => {
+		console.log(e);
+		if(e.originalEvent.key == "ArrowRight") nextSlide();
+		else if(e.originalEvent.key == "ArrowLeft") previousSlide();
+	})
+
 	function nextSlide() {
 		let fadeDuration = 600;
 		let slides = $(".slide");
