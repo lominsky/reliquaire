@@ -237,7 +237,7 @@ html.text {
 	shape-outside: inset(150px 0px 0px 0px);
   /* background-color: #ddf; */
   width: 110px;
-  height: 638;
+  height: 638px;
   float: right;
 }
 #homeRightBox{
@@ -309,11 +309,11 @@ html.text {
 	float: right;
 }
 #bioLeftBox, #bioRightBox {
-	shape-outside: content-box;
-	margin-top: 280px;
+	shape-outside: inset(280px 0px 0px 0px);
+	/* margin-top: 280px; */
 	width: 146px; /*Originally 160*/
-	height: 420px;
-	/*background: blue;*/
+	height: 700px;
+	/* background: #ffd; */
 }
 #bioPic {
 	position: absolute;
