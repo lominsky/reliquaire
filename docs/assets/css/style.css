@@ -233,12 +233,18 @@ html.text {
 #homeRight, #homeLeftBox {
 	float: right;
 }
-#homeLeftBox, #homeRightBox{
-	shape-outside: content-box;
-	margin-top: 150px;
+#homeLeftBox{
+	shape-outside: inset(150px 0px 0px 0px);
+  /* background-color: #ddf; */
+  width: 110px;
+  height: 638;
+  float: right;
+}
+#homeRightBox{
+	shape-outside: inset(150px 0px 0px 0px);
 	width: 110px;
-	height: 488px;
-	/*background: blue;*/
+	height: 638px;
+	/* background: #fdd; */
 }
 #homeLinks{
 	position: absolute;
