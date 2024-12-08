@@ -27,7 +27,8 @@ html {
 }
 
 html.text {
-	background-color: #e6cba5;
+	/*background-color: #e6cba5;*/ /*Up till 12/8/2024*/
+	background-color: #f0e2cf;
 }
 
 .returnSpace {
