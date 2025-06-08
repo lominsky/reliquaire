@@ -57,7 +57,8 @@ html.text {
 	padding-left: 3px;
 }
 
-.dropCaps {
+
+p.dropCaps::first-letter {
 	float: left;
 	left: -50px;
 	font-size: 46px;
@@ -66,6 +67,7 @@ html.text {
 	padding-right: 2px;
 	padding-left: 3px;
 }
+
 .attribution {
 	margin-top: -15px;
 	margin-left: 25px;
@@ -331,22 +333,16 @@ html.text {
 	text-align: center;
 	font-size: 14pt;
 	font-variant: small-caps;
-	padding-top: 80px;
+	padding-top: 180px;
 }
 .bioLinks {
 	color: #000000;
 	text-decoration: none;
 }
-#bioDropCapsA {
-	float: left;
-	left: -50px; 
-	font-size: 50px; 
-	line-height: 32px; 
-	padding-top: 4px; 
-	padding-right: 2px; 
-	padding-left: 3px;
-	margin-left: -149px;
+
+#bioRightA::first-line {
 }
+
 
 
 
