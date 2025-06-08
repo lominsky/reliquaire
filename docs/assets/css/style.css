@@ -57,15 +57,14 @@ html.text {
 	padding-left: 3px;
 }
 
-.dropCaps { 
+.dropCaps {
 	float: left;
-	left: -50px; 
-	font-size: 46px; 
-	line-height: 32px; 
-	padding-top: 4px; 
-	padding-right: 2px; 
+	left: -50px;
+	font-size: 46px;
+	line-height: 32px;
+	padding-top: 4px;
+	padding-right: 2px;
 	padding-left: 3px;
-	/*margin-left: -10px;*/
 }
 .attribution {
 	margin-top: -15px;
@@ -346,7 +345,11 @@ html.text {
 	padding-top: 4px; 
 	padding-right: 2px; 
 	padding-left: 3px;
-	margin-left: -149;
+	margin-left: -149px;
+}
+
+#bioDropCapsAFollower {
+	padding-left: 40px;
 }
 
 
