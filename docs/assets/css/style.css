@@ -441,7 +441,11 @@ p.dropCaps::first-letter {
 	text-decoration: none;
 }
 
-
+.critAtt {
+	padding-left: 2rem;
+	text-indent: -1.3rem;
+	text-align: left;
+}
 
 
 /*Collections Page*/
