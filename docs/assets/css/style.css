@@ -68,6 +68,28 @@ p.dropCaps::first-letter {
 	padding-left: 3px;
 }
 
+span.dropCaps {
+	float: left;
+	/*left: -50px;*/
+	font-size: 46px;
+	line-height: 32px;
+	text-indent: -145px;
+	z-index: 5;
+	/*padding-top: 4px;*/
+	/*padding-right: 2px;*/
+	/*padding-left: 3px;*/
+}
+
+#bioRightSpace {
+	display: block;
+	width:10px;
+	height: 2em;
+}
+
+#bioRightPara {
+	text-indent: 20px;
+}
+
 .attribution {
 	margin-top: -15px;
 	margin-left: 25px;
@@ -318,6 +340,7 @@ p.dropCaps::first-letter {
 	/* background: #ffd; */
 }
 #bioPic {
+	top: 116px;
 	position: absolute;
 	width: 315px;
 	height: 413px;
@@ -340,7 +363,8 @@ p.dropCaps::first-letter {
 	text-decoration: none;
 }
 
-#bioRightA::first-line {
+#bioRight {
+	/*text-indent: -10px;*/
 }
 
 
