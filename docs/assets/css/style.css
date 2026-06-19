@@ -68,7 +68,7 @@ p.dropCaps::first-letter {
 	padding-left: 3px;
 }
 
-span.dropCaps {
+#bioRightA {
 	float: left;
 	/*left: -50px;*/
 	font-size: 46px;
@@ -356,7 +356,7 @@ span.dropCaps {
 	text-align: center;
 	font-size: 14pt;
 	font-variant: small-caps;
-	padding-top: 180px;
+	padding-top: 60px;
 }
 .bioLinks {
 	color: #000000;
