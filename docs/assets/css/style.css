@@ -416,13 +416,14 @@ p.dropCaps::first-letter {
 }
 #critOuter {
 	width: 720px;
-	height: 3100px;
+	/*height: 3100px;*/
 	margin: 20px auto;
 	text-align: center;
+	/*overflow: hidden;*/
 }
 #critLeft, #critRight {
 	width: 332px;
-	height: 100%;
+	/*height: 100%;*/
 	text-align: justify;
 	margin-bottom: 20px;
 }
@@ -438,6 +439,7 @@ p.dropCaps::first-letter {
 	font-size: 14pt;
 	font-variant: small-caps;
 	padding-top: 80px;
+	clear: both;
 }
 .critLinks {
 	color: #000000;
@@ -475,10 +477,11 @@ p.dropCaps::first-letter {
 }
 #colOuter {
 	width: 790px;
-	height: 500px;
+	/*height: 500px;*/
 	margin: 20px auto;
 	text-align: center;
 	display: table;
+	/*overflow: auto;*/
 }
 #colLinks {
 	margin: 100px auto;
@@ -486,6 +489,7 @@ p.dropCaps::first-letter {
 	font-size: 14pt;
 	font-variant: small-caps;
 	padding-top: 60px;
+	clear: both;
 }
 .colLinks {
 	color: #000000;
