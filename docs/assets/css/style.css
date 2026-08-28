@@ -34,6 +34,9 @@ html.text {
 .returnSpace {
 	padding-right: 3.5px;
 }
+.returnSpaceLeft {
+	padding-right: 0px;
+}
 
 #homeDropCapsR {
 	float: left;
@@ -374,7 +377,7 @@ p.dropCaps::first-letter {
 	text-align: center;
 	font-size: 14pt;
 	font-variant: small-caps;
-	padding-top: 200px;
+	padding-top: 100px;
 }
 .bioLinks {
 	color: #000000;
@@ -413,7 +416,7 @@ p.dropCaps::first-letter {
 }
 #critOuter {
 	width: 720px;
-	height: 3800px;
+	height: 3100px;
 	margin: 20px auto;
 	text-align: center;
 }
@@ -471,7 +474,7 @@ p.dropCaps::first-letter {
 	width: 424px;
 }
 #colOuter {
-	width: 720px;
+	width: 790px;
 	height: 500px;
 	margin: 20px auto;
 	text-align: center;
@@ -482,7 +485,7 @@ p.dropCaps::first-letter {
 	text-align: center;
 	font-size: 14pt;
 	font-variant: small-caps;
-	padding-top: 80px;
+	padding-top: 60px;
 }
 .colLinks {
 	color: #000000;
